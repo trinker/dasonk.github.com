@@ -9,11 +9,13 @@ KnitPost <- function(input, base.url = "/") {
     opts_chunk$set(fig.cap = "center")
     
     # Set the theme
-    thm = knit_theme$get("solarized-dark")
-    knit_theme$set(thm)
+    #thm = knit_theme$get("solarized-dark")
+    #knit_theme$set(thm)
     
     render_jekyll()
     out.file <- paste0("../_posts/", today(), "-", in.file, ".md")
     
     knit(input, output = out.file, envir = parent.frame())
 }
+
+KnitPost("testrmd.Rmd")
