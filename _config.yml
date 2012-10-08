@@ -10,12 +10,12 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Dason's test blog
-tagline: Fo realz 
+tagline: Not a bot 
 author : Dason Kurkiewicz
-  name : Dason Kurkiewicz
-  email : 
-  github : Dasonk
-  twitter : Dasonk
+#  name : 
+#  email : 
+#  github : Dasonk
+#  twitter : Dasonk
   #feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
