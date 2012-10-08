@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Raptor Hunting
-tagline: Dason is not a bot 
+title : Point Mass Prior
+tagline: Let the data speak
 author : 
  name : Dason
  #email : a@nope.com
@@ -18,8 +18,8 @@ author :
  twitter : Dasonk
  #feedburner : feedname
 
-name: Raptor Hunting
-description: Dason is not a bot
+name: Point Mass Prior
+description: Let the data speak
 url: http://dasonk.github.com
 
 # The production_url is only used when full-domain names are needed

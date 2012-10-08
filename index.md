@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Raptor Hunting
+title: Point Mass Prior
 tagline: A blog about R and statistics
 ---
 {% include JB/setup %}
