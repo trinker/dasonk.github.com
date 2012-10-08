@@ -7,6 +7,8 @@ KnitPost <- function(input, base.url = "/") {
     fig.path <- paste0("../figs/", in.file, "/")
     opts_chunk$set(fig.path = fig.path)
     opts_chunk$set(fig.cap = "center")
+    opts_chunk$set(dev = "bmp")
+    opts_chunk$set(dev.args=list(bg="red"))
     
     # Set the theme
     #thm = knit_theme$get("solarized-dark")
@@ -18,4 +20,5 @@ KnitPost <- function(input, base.url = "/") {
     knit(input, output = out.file, envir = parent.frame())
 }
 
+setwd("~/github/Dasonk.github.com/Rmd/")
 KnitPost("testrmd.Rmd")
