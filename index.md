@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sample first page!
-tagline: Don't forget it
+title: Raptor Hunting
+tagline: A blog about R and statistics
 ---
 {% include JB/setup %}
 
