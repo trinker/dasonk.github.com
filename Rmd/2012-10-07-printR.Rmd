@@ -2,7 +2,7 @@
 layout: post
 title: "printR"
 description: "A pointless exercise in code obfuscation"
-category: R
+category: blarg
 tags: [R, obfuscation]
 ---
 {% include JB/setup %}
