@@ -15,10 +15,9 @@ KnitPost <- function(input, base.url = "/") {
     #knit_theme$set(thm)
     
     render_jekyll()
-    out.file <- paste0("../_posts/", today(), "-", in.file, ".md")
+    out.file <- paste0("../_posts/", in.file, ".md")
     
     knit(input, output = out.file, envir = parent.frame())
 }
 
 setwd("~/github/Dasonk.github.com/Rmd/")
-KnitPost("testrmd.Rmd")
