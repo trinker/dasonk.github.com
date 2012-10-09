@@ -9,6 +9,7 @@ description: ""
 
  - Post on why to use FDR
  - Post on comparing when to use t-tests
+ - Assessing different types of convergence
 
 ## R ideas
 
