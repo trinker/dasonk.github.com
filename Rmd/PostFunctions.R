@@ -1,5 +1,6 @@
 MakePost <- function(title){
     require(lubridate)
+    title <- gsub("[[:space:]]+", "-", title)
     oldwd <- getwd()
     setwd("~/github/Dasonk.github.com/Rmd")
     filename <- paste0(today(), "-", title, ".Rmd")
