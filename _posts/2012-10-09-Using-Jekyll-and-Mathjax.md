@@ -15,9 +15,9 @@ To get Mathjax support the easiest thing to do is to add the following to _inclu
 </script>
 {% endhighlight %}
 
-I'm sure there is a better way to do this so that you don't need to add this whenever you change themes but this is working for me for the time being:
+I'm sure there is a better way to do this so that you don't need to add this whenever you change themes but this is working for me for the time being.
     
-However using Maruku (the default markdown rendering engine with Jekyll) actually using math can be a pain since it likes to replace `_` with `<em>` no matter where it is in the post.  So `x_i` gets converted to `x<em>i` which is not what we want.
+However using Maruku (the default markdown rendering engine with Jekyll) actually using math can be a pain since it likes to replace `_` with `<em>` no matter where it is in the post.  So `$$x_i$$` gets converted to `$$x<em>i$$` which is not what we want.
 
 To have a nice setup for using math in my posts I switched my markdown rendering engine from the default with Jekyll (Maruku) to kramdown.  I just installed the kramdown gem
 
@@ -44,3 +44,5 @@ then it will get centered and displayed like "display math" like:
 $$a^2 + b^2 = c^2$$
 
 Combining this with the fact that I write my posts using R Markdown so I can easily insert code and output into my posts makes the whole process a lot nicer.
+
+I have heard good things about rdiscount as a markdown rendering engine but I don't think I'll use it.  It doesn't appear to support the syntax I described in this post and I rather like this syntax.  kramdown appears to work well enough for my needs so I think I'll stick with that for now.
