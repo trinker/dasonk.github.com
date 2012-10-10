@@ -1,0 +1,49 @@
+MakePost <- function(title){
+    require(lubridate)
+    oldwd <- getwd()
+    setwd("~/github/Dasonk.github.com/Rmd")
+    filename <- paste0(today(), "-", title, ".Rmd")
+    outtext <- paste(gsub("default", title, readLines("default.txt")), collapse="\n")
+    cat(outtext, file = filename)
+    setwd(oldwd)
+}
+
+KnitPost <- function(input, base.url = "/") {
+    require(knitr)
+    require(lubridate)
+    
+    opts_knit$set(base.url = base.url)
+    in.file <- sub(".Rmd$", "", basename(input))
+    fig.path <- paste0("../figs/", in.file, "/")
+    opts_chunk$set(fig.path = fig.path)
+    opts_chunk$set(fig.cap = "center")
+    opts_chunk$set(dev = "bmp")
+    opts_chunk$set(dev.args=list(bg="red"))
+    
+    # Set the theme
+    #thm = knit_theme$get("solarized-dark")
+    #knit_theme$set(thm)
+    
+    render_jekyll()
+    out.file <- paste0("../_posts/", in.file, ".md")
+    
+    knit(input, output = out.file, envir = parent.frame())
+}
+
+DeletePost <- function(input){
+    in.file <- sub(".Rmd$", "", basename(input))
+    out.file <- paste0("../_posts/", in.file, ".md")
+    if(file.exists(out.file)){
+        file.remove(out.file)
+    }
+    tmp1 <- paste0(in.file, ".md")
+    tmp2 <- paste0(in.file, ".html")
+    if(file.exists(tmp1)){
+        file.remove(tmp1)
+    }
+    if(file.exists(tmp2)){
+        file.remove(tmp2)
+    }
+}
+
+setwd("~/github/Dasonk.github.com/Rmd/")
