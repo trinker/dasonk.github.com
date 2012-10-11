@@ -21,10 +21,6 @@ KnitPost <- function(input, base.url = "/") {
     opts_chunk$set(dev = "bmp")
     opts_chunk$set(dev.args=list(bg="red"))
     
-    # Set the theme
-    #thm = knit_theme$get("solarized-dark")
-    #knit_theme$set(thm)
-    
     render_jekyll()
     out.file <- paste0("../_posts/", in.file, ".md")
     
