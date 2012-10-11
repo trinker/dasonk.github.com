@@ -20,3 +20,5 @@ description: ""
  - Overview of datasets provided in various R packages
 
 ## Other ideas
+
+ - Learning gnuplot
