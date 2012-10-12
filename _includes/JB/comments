@@ -1,5 +1,6 @@
 {% if site.JB.comments.provider and page.comments != false %}
 
+<a name="comments"></a>
 {% case site.JB.comments.provider %}
 {% when "disqus" %}
   {% include JB/comments-providers/disqus %}

@@ -18,7 +18,13 @@ tagline: A blog about R and statistics
           </div>
           <div class="span7">
             <h2><a class="post-title" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
-            {{ post.content }}
+            {% if post.description %}
+            <h3> {{ post.description }} </h3>
+            {% endif %}
+            
+              {{ post.content }}
+              
+              <a href="{{ BASE_PATH }}{{ post.url }}#comments">comments</a>
             <hr>
             <br />
             <br />
