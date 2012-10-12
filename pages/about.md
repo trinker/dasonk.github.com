@@ -1,12 +1,13 @@
 ---
 layout: page
 title: "About"
+tagline: A little bit about Dason
 description: ""
 group: navigation
 ---
 {% include JB/setup %}
 
-# Dason Kurkiewicz
+# Name: Dason Kurkiewicz
 
 ## Photo
 ![Dason and Kelley](/images/Faces.jpg "Dason and Kelley") 
