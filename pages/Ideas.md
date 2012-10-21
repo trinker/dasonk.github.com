@@ -11,6 +11,7 @@ description: ""
  - Post on comparing when to use t-tests
  - Assessing different types of convergence
  - Analyze anscombe data for the hell of it
+ - What makes a "linear model" linear.
 
 ## R ideas
 
