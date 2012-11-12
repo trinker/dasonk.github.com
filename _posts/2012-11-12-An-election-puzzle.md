@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An-election-puzzle"
+title: "An election puzzle"
 description: ""
 category: puzzle
 tags: [statsblogs, puzzle]
