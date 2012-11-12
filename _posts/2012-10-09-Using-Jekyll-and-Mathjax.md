@@ -2,8 +2,8 @@
 layout: post
 title: "Using Jekyll and Mathjax"
 description: "My hackish way to get mathjax support on my blog"
-category: publish
-tags: [jekyll, mathjax, blog]
+category: blog
+tags: [jekyll, mathjax, blog, statsblogs]
 ---
 {% include JB/setup %}
 

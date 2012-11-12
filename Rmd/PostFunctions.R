@@ -2,7 +2,7 @@ MakePost <- function(title){
     require(lubridate)
     title <- gsub("[[:space:]]+", "-", title)
     oldwd <- getwd()
-    setwd("~/github/Dasonk.github.com/Rmd")
+    setwd("~/github/dasonk.github.com/Rmd")
     filename <- paste0(today(), "-", title, ".Rmd")
     outtext <- paste(gsub("default", title, readLines("default.txt")), collapse="\n")
     cat(outtext, file = filename)
@@ -43,4 +43,4 @@ DeletePost <- function(input){
     }
 }
 
-setwd("~/github/Dasonk.github.com/Rmd/")
+setwd("~/github/dasonk.github.com/Rmd/")
